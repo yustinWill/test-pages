@@ -1,449 +1,1158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Basic Meta & Responsive -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.n0rthernlights.com/" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - BizLand Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-  <!-- Title & Description -->
-  <title>Stop Hiring – Start Partnering | N0RTHERN LIGHTS</title>
-  <meta name="description" content="Discover how N0RTHERN LIGHTS partners with startups to create sustainable value and become the next unicorn." />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:title"       content="Stop Hiring – Start Partnering | N0RTHERN LIGHTS" />
-  <meta property="og:description" content="Discover how N0RTHERN LIGHTS partners with startups to create sustainable value and become the next unicorn." />
-  <meta property="og:url"         content="https://www.n0rthernlights.com/" />
-  <meta property="og:image"       content="https://images.squarespace-cdn.com/content/v1/5ddfb232065f5b7bc74e8ec7/1576065978668-MHIJZ6LHYECK6PX66QCT/image-asset.jpeg" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Stop Hiring – Start Partnering | N0RTHERN LIGHTS" />
-  <meta name="twitter:description" content="Discover how N0RTHERN LIGHTS partners with startups to create sustainable value and become the next unicorn." />
-  <meta name="twitter:image"       content="https://images.squarespace-cdn.com/content/v1/5ddfb232065f5b7bc74e8ec7/1576065978668-MHIJZ6LHYECK6PX66QCT/image-asset.jpeg" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Favicon & Touch Icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-  <link rel="preload" as="image" href="./assets/images/img_home_hero.jpeg" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "N0RTHERN LIGHTS",
-    "url": "https://www.n0rthernlights.com/",
-    "logo": "https://images.squarespace-cdn.com/content/v1/5ddfb232065f5b7bc74e8ec7/1576065978668-MHIJZ6LHYECK6PX66QCT/image-asset.jpeg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "email": "seasoned_babyboomers@icloud.com",
-      "areaServed": "ID"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Jl. Pintu Air Raya No. 54–54A",
-      "addressLocality": "Jakarta",
-      "postalCode": "10710",
-      "addressCountry": "ID"
-    }
-  }
-  </script>
-
-  <style>
-    /*────────────────────────────────────────────────────────────────────────────
-      1) LOCAL FONTS
-    ─────────────────────────────────────────────────────────────────────────────*/
-    /* Proxima Nova — self-hosted via assets/fonts */
-
-    @font-face {
-      font-family: 'ProximaNova';
-      src: url('./assets/fonts/ProximaNova-Light.otf') format('opentype');
-      font-weight: 300;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'ProximaNova';
-      src: url('./assets/fonts/ProximaNova-Regular.ttf') format('opentype');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'ProximaNova';
-      src: url('./assets/fonts/ProximaNova-SemiBold.otf') format('opentype');
-      font-weight: 600;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'ProximaNova';
-      src: url('./assets/fonts/ProximaNova-Bold.otf') format('opentype');
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'ProximaNova';
-      src: url('./assets/fonts/ProximaNova-Black.ttf') format('opentype');
-      font-weight: 900;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    /* Acumin Pro ExtraCondensed — self-hosted via assets/fonts */
-
-    @font-face {
-      font-family: 'Acumin-Pro-ExtraCondensed';
-      src: url('./assets/fonts/Acumin_Pro_ExtraCondensed_Light.otf') format('opentype');
-      font-weight: 300;
-      font-style: normal;
-      font-display: swap;
-    }
-    
-    @font-face {
-      font-family: 'Acumin-Pro-ExtraCondensed';
-      src: url('./assets/fonts/Acumin_Pro_ExtraCondensed_Reguler.otf') format('opentype');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-    
-    @font-face {
-      font-family: 'Acumin-Pro-ExtraCondensed';
-      src: url('./assets/fonts/Acumin_Pro_ExtraCondensed_Bold.otf') format('opentype');
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    /* Fjalla One — self-hosted via assets/fonts */
-
-    @font-face {
-      font-family: 'FjallaOne';
-      src: url('./assets/fonts/FjallaOne-Regular.ttf') format('opentype');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    /*────────────────────────────────────────────────────────────────────────────
-      2) RESET & BASE
-    ─────────────────────────────────────────────────────────────────────────────*/
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'ProximaNova', sans-serif;
-      color: #fff;
-      overflow-x: hidden;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.2s ease-in-out;
-    }
-    a:hover {
-      opacity: .5;
-    }
-    button {
-      color: inherit;
-      transition: color 0.2s ease-in-out;
-    }
-    button:hover {
-      opacity: .5;
-      cursor: pointer;
-    }
-
-    /* headings use bold face */
-    h1, h2 {
-      /* font-family: 'NL-Bold', sans-serif; */
-    }
-
-    /*────────────────────────────────────────────────────────────────────────────
-      3) HEADER
-    ─────────────────────────────────────────────────────────────────────────────*/
-    header {
-      position: absolute; top: 0; left: 0; right: 0;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 50px 40px 0;
-      background: transparent; z-index: 10;
-    }
-    .logo img {
-      width: 120px; height: 124px;
-    }
-
-    /* mobile header override */
-    @media (max-width: 767px) {
-      header {
-        position: fixed; margin: 0; padding: 10px 12px; background: #fff;
-      }
-      .logo img { width: 80px; height: 82px; }
-    }
-
-    /*────────────────────────────────────────────────────────────────────────────
-      4) NAVIGATION
-    ─────────────────────────────────────────────────────────────────────────────*/
-    nav {
-      position: fixed; top: 0; left: -100%;
-      width: 100%; height: 100%; background: #000;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      transition: left 0.3s ease-in-out; z-index: 9;
-    }
-    nav.open { left: 0; }
-    .nav-close {
-      position: absolute; top: 20px; right: 20px;
-      background: none; border: none;
-      font-size: 2rem; color: #fff; cursor: pointer;
-    }
-    nav a {
-      font-family: 'ProximaNova', sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-      padding: 14px; 
-      color: #fff;
-      text-transform: uppercase;
-    }
-    header.nav-open .nav-toggle { display: none; }
-
-    /* mobile header override */
-    @media (max-width: 767px) {
-      .nav-toggle {
-        display: block; background: #fff; border: none;
-        padding: 8px; border-radius: 4px;
-        font-size: 24px; 
-        color: #222; 
-        cursor: pointer; 
-        z-index: 11;
-      }
-    }
-
-    /* desktop override */
-    @media (min-width: 768px) {
-      .nav-toggle { display: none; }
-      nav {
-        position: static; transform: none; height: auto;
-        background: transparent; flex-direction: row;
-        justify-content: flex-end; padding: 0; left: 0;
-      }
-      .nav-close { display: none; }
-    }
-
-    /*────────────────────────────────────────────────────────────────────────────
-      5) HERO
-    ─────────────────────────────────────────────────────────────────────────────*/
-    .hero {
-      position: relative;
-      height: 80vh;
-      display: flex; flex-direction: column;
-      justify-content: center; align-items: center;
-      text-align: center;
-      padding: 0 1rem;
-      overflow: hidden;
-    }
-    .hero img.bg-hero {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-
-    .hero h1 {
-      margin-top: 60px;
-      margin-bottom: 49.8px;
-      font-size: 60px; 
-      font-family: "Acumin-Pro-ExtraCondensed", sans-serif;
-      font-weight: 300;
-      color: #fff;
-    }
-    .hero p {
-      margin-top: 16px;
-      font-family: 'ProximaNova', sans-serif;
-      font-size: 16px; 
-      font-weight: 700;
-      color: #fff;
-    }
-    .cta-button {
-      border: none;
-      margin-top: 34px;
-      font-family: 'ProximaNova', sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      background: #000; 
-      color: #fff;
-      padding: 21px 34px;
-      text-transform: uppercase;
-    }
-
-    /* mobile header override */
-    @media (max-width: 767px) {
-      .hero h1 { 
-        font-size: 28px; 
-        margin-bottom: 23.2px;
-      }
-    }
-
-    /*────────────────────────────────────────────────────────────────────────────
-      6) PHILOSOPHY
-    ─────────────────────────────────────────────────────────────────────────────*/
-    .philosophy {
-      display: flex; flex-direction: column;
-      background: #fff; color: #000;
-      padding: 120px 17px; text-align: center;
-    }
-    .philosophy img {
-      width: 55%; height: auto;
-      display: block; margin: 0 auto 6rem;
-    }
-    .philosophy h2 {
-      align-self: center;
-      max-width: 55%;
-      text-align: center;
-      font-size: 60px; 
-      margin-bottom: 34px;
-      font-family: 'Acumin-Pro-ExtraCondensed', sans-serif;
-    }
-    .philosophy p {
-      margin: 16px 0;
-      font-family: 'ProximaNova', sans-serif;
-      font-size: 16px; 
-      font-weight: 400;
-      display: inline-block; 
-      text-align: center; 
-      line-height: 1.8;
-      color: #222;
-    }
-
-    /* mobile header override */
-    @media (max-width: 767px) {
-      .philosophy img {
-        width: 100%;
-      }
-      .philosophy h2 { 
-        max-width: 80%;
-        font-size: 32px;
-      }
-    }
-
-    /*────────────────────────────────────────────────────────────────────────────
-      7) CONTACT & FOOTER
-    ─────────────────────────────────────────────────────────────────────────────*/
-    .contact-footer {
-      display: flex; flex-direction: row;
-      background: #000; color: #fff;
-      padding: 100px 50px;
-      justify-content: center;
-      align-items: center;
-    }
-    .contact-footer p {
-      display: inline; margin: 0 1rem; font-size: 13px;
-      font-family: "FjallaOne", sans-serif;
-      font-weight: 400;
-      text-align: center;
-    }
-
-    /* mobile header override */
-    @media (max-width: 767px) {
-      .contact-footer {
-        flex-direction: column;
-      }
-      .contact-footer p {
-        margin-bottom: 16px;
-      }
-    }
-  </style>
+  <!-- =======================================================
+  * Template Name: BizLand
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Updated: Dec 05 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body>
-  <header id="site-header">
-    <a href="/" class="logo" aria-label="N0RTHERN LIGHTS home">
-      <img src="./assets/images/logo_brand.jpeg" width="80" height="82" alt="Logo" loading="lazy" />
-    </a>
-    <button 
-      class="nav-toggle" 
-      id="open-nav" 
-      aria-label="Open navigation"
-      aria-controls="mobile-nav"
-      aria-expanded="false"
-    >&#9776;</button>
-    <nav id="mobile-nav" role="navigation" aria-label="Main menu">
-      <button 
-        class="nav-close" 
-        id="close-nav" 
-        aria-label="Close navigation"
-        aria-controls="mobile-nav"
-        aria-expanded="true"
-      >&times;</button>
-      <a href="#hero">Home</a>
-      <a href="#philosophy">About</a>
-      <a href="#contact">Contact</a>
-      <a href="#team">Team</a>
-    </nav>
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@slk.co.id">info@slk.co.id</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+62 21 5435 9999</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/custom/logo_brand.png" alt="">
+          <!-- <h1 class="sitename">BizLand</h1> -->
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <!-- <li><a href="#team">Team</a></li> -->
+            <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
   </header>
 
-  <main>
-    <section id="hero" class="hero">
-      <img 
-        class="bg-hero"
-        src="./assets/images/img_home_hero.jpeg"
-        alt="Hero background"
-        width="1920"
-        height="1080"
-        loading="eager"
-        decoding="async"
-        fetchpriority="high"
-      />
-      <h1>Stop Hiring – Start Partnering</h1>
-      <p>IN A N0RTHERN LIGHTS SUSTAINABLE VALUE CREATION IDEAS INCUBATION MODEL</p>
-      <button class="cta-button">Find Out How Together We Can Be The Next Unicorn!</button>
-    </section>
+  <main class="main">
 
-    <section id="philosophy" class="philosophy">
-      <h2>
-        <strong>PHILOSOPHY OF N0RTHERN LIGHTS</strong>
-      </h2>
-      <img src="./assets/images/img_home_philosophy.jpeg"
-           alt="Founders collaborating" loading="lazy" />
-      <p>
-        <strong>The valuation of N0RTHERN LIGHTS startups depends on 3 factors:</strong>
-      </p>
-      <p>1. The Team Founders' chemistries colliding with each other.</p>
-      <p>2. The speed of the chemistries collision in execution.</p>
-      <p>3. At what altitude the startups are soaring.</p>
-    </section>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
 
-    <section id="contact" class="contact-footer">
-      <p style="color: #52c2c8;">N0RTHERN LIGHTS</p>
-      <p>Jl. Pintu Air Raya No. 54 – 54A, Jakarta 10710, Indonesia</p>
-      <p><a href="mailto:seasoned_babyboomers@icloud.com">seasoned_babyboomers@icloud.com</a></p>
-    </section>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1><span>SLK</span> Digital Innovation</h1>
+            <p>Smart solutions to automate, secure, and scale your business.</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Explore Products</a>
+              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4><a href="" class="stretched-link">Business Process Automation (BPA)</a></h4>
+              <p>Automate repetitive tasks and optimize workflows with AI-driven solutions for sales, inventory, procurement, and more—boosting efficiency and reducing costs.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-shield-plus icon"></i></div>
+              <h4 style="margin-bottom: 40px;"><a href="" class="stretched-link">Cyber Security</a></h4>
+              <p>Protect your business with AI-powered security that detects and blocks threats in real time—minimizing risk and reducing manual effort.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4><a href="" class="stretched-link">Enterprise Resource Planning (ERP)</a></h4>
+              <p>Integrate core functions like finance, sales, and manufacturing with ERP systems that support seamless operations and smarter decision-making.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div> -->
+          <!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>About</h2> -->
+        <p><span>Find Out More</span> <span class="description-title">About Us</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-3">
+              <h3>Driving Indonesia’s Digital Future.</h3>
+              <p class="fst-italic">
+                SLK Digital Innovation is a trusted technology partner helping businesses in Indonesia automate, secure, and scale with confidence. 
+                Our intelligent solutions are built on innovation, executed with precision, and designed to deliver lasting impact. 
+                We don’t just build systems—we enable transformation.
+              </p>
+              <ul>
+                <li>
+                  <i class="bi bi-activity"></i>
+                  <div>
+                    <h4>Innovation at the Core</h4>
+                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-people"></i>
+                  <div>
+                    <h4>Collaborative by Design</h4>
+                    <p>Every solution is shaped through close client collaboration, ensuring it aligns with real-world goals and challenges.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-bar-chart-steps"></i>
+                  <div>
+                    <h4>Scalable for Growth</h4>
+                    <p>Our systems are flexible and robust—built to adapt as your business expands and evolves.</p>
+                  </div>
+                </li>
+              </ul>
+              <p>
+                SLK delivers more than technology—we deliver progress. 
+                With a proven track record in BPA, AI-driven cybersecurity, and ERP, we’re committed to advancing Indonesia’s digital economy.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section" style="display: none;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section" style="display: none;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-emoji-smile"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Happy Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-headset"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-people"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hard Workers</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background" style="display: none;">
+
+      <div class="container">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section-bg">
+
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>Services</h2> -->
+        <p><span>Core</span> <span class="description-title">Services</span></p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+        <div class="row gy-4">
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative d-flex flex-column">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Business Process Automation (BPA)</h3>
+              </a>
+              <p>Streamline operations and eliminate inefficiencies with AI-driven automation tailored to your workflows.</p>
+              <div style="position: absolute; bottom: 30px;" class="align-self-center">
+                <p><strong>Salesforce Automation, Microsoft Power Automate</strong></p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="service-item position-relative d-flex flex-column">
+              <div class="icon">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>AI-Driven Cybersecurity</h3>
+              </a>
+              <p>Stay protected with real-time threat detection, intelligent prevention, and minimal manual intervention.</p>
+              <div style="position: absolute; bottom: 30px;" class="align-self-center">
+                <p><strong>CrowdStrike, McAfee, Norton</strong></p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative d-flex flex-column">
+              <div class="icon">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Enterprise Resource Planning (ERP)</h3>
+              </a>
+              <p>Integrate core business functions into a single unified system for smarter decision-making.</p>
+              <div style="position: absolute; bottom: 30px;" class="align-self-center">
+                <p><strong>SAP ERP, Oracle NetSuite</strong></p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-item position-relative d-flex flex-column">
+              <div class="icon">
+                <i class="bi bi-cash-stack"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Point of Sale (POS) Solutions</h3>
+              </a>
+              <p>Transform your retail operations with seamless, integrated POS systems for sales and inventory.</p>
+              <div style="position: absolute; bottom: 30px;" class="align-self-center">
+                <p><strong>Square POS, Shopify POS</strong></p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative d-flex flex-column">
+              <div class="icon">
+                <i class="bi bi-cart"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>E-Commerce Solutions</h3>
+              </a>
+              <p>Launch and scale your online business with platforms that optimize customer experience and drive sales.</p>
+              <div style="position: absolute; bottom: 30px;" class="align-self-center">
+                <p><strong>Shopify, WooCommerce, Magento</strong></p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="service-item position-relative d-flex flex-column">
+              <div class="icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Custom App & Software Development</h3>
+              </a>
+              <p>Build tailor-made mobile apps and enterprise software to match your unique business needs.</p>
+              <div style="position: absolute; bottom: 30px;" class="align-self-center">
+                <p><strong>iOS/Android Apps, Enterprise SaaS</strong></p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+        </div>
+      </div>
+    
+    </section><!-- /Services Section -->    
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background"  style="display: none;"
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>Portfolio</h2> -->
+        <p><span>Our</span> <span class="description-title">Portfolio</span></p>
+      </div>
+    
+      <div class="container">
+    
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-ecommerce">eCommerce & Retail</li>
+            <li data-filter=".filter-food">Food & Beverage</li>
+            <li data-filter=".filter-telecom">Telecom</li>
+            <li data-filter=".filter-realestate">Real Estate</li>
+            <li data-filter=".filter-manufacturing">Manufacturing</li>
+            <li data-filter=".filter-healthcare">Healthcare</li>
+          </ul>
+    
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ecommerce">
+              <img src="https://img.berduflare.com/img/800/root/hCiKsjqjZIkRHAKhCiNdVslDG2V9ipQ8Su3WJavwLMlw.jpg" class="img-fluid" alt="Tokopedia">
+              <div class="portfolio-info">
+                <h4>Tokopedia</h4>
+                <p>Supported marketplace process automation and backend integration.</p>
+                <a href="https://img.berduflare.com/img/800/root/hCiKsjqjZIkRHAKhCiNdVslDG2V9ipQ8Su3WJavwLMlw.jpg" title="Tokopedia" data-gallery="portfolio-gallery-ecommerce" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-food">
+              <img src="https://jiwagroup.com/media/news/news-1624586510Whatson-Banner-720x432-jiwaplus.jpg" class="img-fluid" alt="Janji Jiwa">
+              <div class="portfolio-info">
+                <h4>Janji Jiwa</h4>
+                <p>Enabled digital ordering and POS integration for F&B outlets.</p>
+                <a href="https://jiwagroup.com/media/news/news-1624586510Whatson-Banner-720x432-jiwaplus.jpg" title="Janji Jiwa" data-gallery="portfolio-gallery-food" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-telecom">
+              <img src="https://garuda.industry.co.id/uploads/berita/detail/34865.jpg" class="img-fluid" alt="Telkom Indonesia">
+              <div class="portfolio-info">
+                <h4>Telkom Indonesia</h4>
+                <p>Delivered automated ticketing and customer service optimization tools.</p>
+                <a href="https://garuda.industry.co.id/uploads/berita/detail/34865.jpg" title="Telkom Indonesia" data-gallery="portfolio-gallery-telecom" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-realestate">
+              <img src="https://lh3.googleusercontent.com/e0gdv8ZJnLePbA83VCvZEodFDcjGRvtg26yLPCu0WVOFaaZ7h8mNVn_rZZQAIf4msDqRF8rLjISDdwB7ARDd_-I-I2vzMyiNRAEImO_NbHvNKJD9BxSRwoBWKdPYj7oz-DMovb7gZXfjz82y5GiU9W3-PY12v0BlaeZD8eGLNdExLFhL7_00IoTT8zFP" class="img-fluid" alt="Rumah123">
+              <div class="portfolio-info">
+                <h4>Rumah123</h4>
+                <p>Enhanced real estate listing platform with AI-based matching engine.</p>
+                <a href="https://lh3.googleusercontent.com/e0gdv8ZJnLePbA83VCvZEodFDcjGRvtg26yLPCu0WVOFaaZ7h8mNVn_rZZQAIf4msDqRF8rLjISDdwB7ARDd_-I-I2vzMyiNRAEImO_NbHvNKJD9BxSRwoBWKdPYj7oz-DMovb7gZXfjz82y5GiU9W3-PY12v0BlaeZD8eGLNdExLFhL7_00IoTT8zFP" title="Rumah123" data-gallery="portfolio-gallery-realestate" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-manufacturing">
+              <img src="https://images.squarespace-cdn.com/content/v1/5a1486e480bd5e7169a3ba25/1512432964864-NJA5S2MPVS0L1QB8PI2W/_0013_mlb+2.jpg?format=2500w" class="img-fluid" alt="Unilever">
+              <div class="portfolio-info">
+                <h4>Unilever</h4>
+                <p>Implemented supply chain automation and demand forecasting.</p>
+                <a href="https://images.squarespace-cdn.com/content/v1/5a1486e480bd5e7169a3ba25/1512432964864-NJA5S2MPVS0L1QB8PI2W/_0013_mlb+2.jpg?format=2500w" title="Unilever" data-gallery="portfolio-gallery-manufacturing" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-healthcare">
+              <img src="https://cdn1.katadata.co.id/media/images/thumb/2020/08/26/halodoc-2020_08_26-07_20_26_3d34b77b2cfa0af8875d6e53d0061a33_960x640_thumb.png" class="img-fluid" alt="Halodoc">
+              <div class="portfolio-info">
+                <h4>Halodoc</h4>
+                <p>Developed patient engagement tools and data integration platform.</p>
+                <a href="https://cdn1.katadata.co.id/media/images/thumb/2020/08/26/halodoc-2020_08_26-07_20_26_3d34b77b2cfa0af8875d6e53d0061a33_960x640_thumb.png" title="Halodoc" data-gallery="portfolio-gallery-healthcare" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section><!-- /Portfolio Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section light-background" style="display: none;">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>Team</h2> -->
+        <p><span>Our Hardworking</span> <span class="description-title">Team</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section" style="display: none;">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>Pricing</h2> -->
+        <p><span>Check our</span> <span class="description-title">Pricing</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="pricing-item">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="pricing-item">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>F.A.Q</h2> -->
+        <p><span>Frequently Asked</span> <span class="description-title">Questions</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>What industries can benefit from Business Process Automation (BPA)?</h3>
+                <div class="faq-content">
+                  <p>Virtually any industry—banking, retail, logistics, manufacturing, or healthcare—can benefit from BPA. Our solutions are customized to match specific workflows and compliance needs.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How secure are your AI-powered cybersecurity solutions?</h3>
+                <div class="faq-content">
+                  <p>Our cybersecurity services use AI-driven threat detection, real-time monitoring, and proactive defense mechanisms to ensure enterprise-level protection with minimal manual effort.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Can you integrate your ERP with our existing systems?</h3>
+                <div class="faq-content">
+                  <p>Yes, our ERP solutions are modular and can be integrated with your current software infrastructure, whether on-premise or cloud-based, ensuring seamless data flow and operations.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Do you offer support after project deployment?</h3>
+                <div class="faq-content">
+                  <p>Absolutely. We provide continuous technical support, maintenance, and updates to ensure your systems run smoothly and securely long after implementation.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What types of POS systems do you support?</h3>
+                <div class="faq-content">
+                  <p>We support widely used POS platforms such as Square, Shopify POS, and custom POS systems for retail, F&B, and service-based businesses with inventory and sales tracking features.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How long does it take to deploy a digital solution?</h3>
+                <div class="faq-content">
+                  <p>It depends on the project scope. For example, a POS setup may take days, while a full ERP implementation or BPA system could take several weeks to months with user training.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>Contact</h2> -->
+        <p><span>Need Help?</span> <span class="description-title">Contact Us</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+
+          <div class="col-lg-1">
+          </div>
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Jl. Lingkar Luar Barat No.9, Rawa Buaya, Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11740, Indonesia</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+62 21 5435 9999</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>info@slk.co.id</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7743478398024!2d106.7277058!3d-6.1609685999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f77ff65b3d91%3A0xd706b8de4659663e!2sPT%20SLK%20Digital%20Innovation!5e0!3m2!1sid!2sid!4v1746180571840!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div> -->
+          <!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
   </main>
 
-  <script>
-    const header = document.getElementById('site-header'),
-          openNav = document.getElementById('open-nav'),
-          closeNav = document.getElementById('close-nav'),
-          nav     = document.getElementById('mobile-nav');
+  <footer id="footer" class="footer">
 
-    openNav.addEventListener('click', () => {
-      nav.classList.add('open');
-      header.classList.add('nav-open');
-    });
-    closeNav.addEventListener('click', () => {
-      nav.classList.remove('open');
-      header.classList.remove('nav-open');
-    });
-  </script>
+    <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">SLK Digital Innovation</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Lingkar Luar Barat No.9, Rawa Buaya, Cengkareng</p>
+            <p>Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11740, Indonesia</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62 21 5435 9999</span></p>
+            <p><strong>Email:</strong> <span>info@slk.co.id</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-2 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Business Process Automation (BPA)</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">AI-Driven Cybersecurity</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Enterprise Resource Planning (ERP)</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Point of Sale (POS) Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">E-Commerce Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Custom App & Software Development</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">SLK Digital Innovation</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
