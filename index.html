@@ -1,1 +1,410 @@
-<!DOCTYPE html><html><head><title>My Site</title></head><body><h1>Hello World</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta & Responsive -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.n0rthernlights.com/" />
+
+  <!-- Title & Description -->
+  <title>Stop Hiring – Start Partnering | N0RTHERN LIGHTS</title>
+  <meta name="description" content="Discover how N0RTHERN LIGHTS partners with startups to create sustainable value and become the next unicorn." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Stop Hiring – Start Partnering | N0RTHERN LIGHTS" />
+  <meta property="og:description" content="Discover how N0RTHERN LIGHTS partners with startups to create sustainable value and become the next unicorn." />
+  <meta property="og:url"         content="https://www.n0rthernlights.com/" />
+  <meta property="og:image"       content="https://images.squarespace-cdn.com/content/v1/5ddfb232065f5b7bc74e8ec7/1576065978668-MHIJZ6LHYECK6PX66QCT/image-asset.jpeg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Stop Hiring – Start Partnering | N0RTHERN LIGHTS" />
+  <meta name="twitter:description" content="Discover how N0RTHERN LIGHTS partners with startups to create sustainable value and become the next unicorn." />
+  <meta name="twitter:image"       content="https://images.squarespace-cdn.com/content/v1/5ddfb232065f5b7bc74e8ec7/1576065978668-MHIJZ6LHYECK6PX66QCT/image-asset.jpeg" />
+
+  <!-- Favicon & Touch Icon -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "N0RTHERN LIGHTS",
+    "url": "https://www.n0rthernlights.com/",
+    "logo": "https://via.placeholder.com/120x124?text=Logo",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "seasoned_babyboomers@icloud.com",
+      "areaServed": "ID"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Pintu Air Raya No. 54–54A",
+      "addressLocality": "Jakarta",
+      "postalCode": "10710",
+      "addressCountry": "ID"
+    }
+  }
+  </script>
+
+  <style>
+    /*────────────────────────────────────────────────────────────────────────────
+      1) LOCAL FONTS
+    ─────────────────────────────────────────────────────────────────────────────*/
+    /* Proxima Nova — self-hosted via assets/fonts */
+
+    @font-face {
+      font-family: 'ProximaNova';
+      src: url('./assets/fonts/ProximaNova-Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'ProximaNova';
+      src: url('./assets/fonts/ProximaNova-Regular.ttf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'ProximaNova';
+      src: url('./assets/fonts/ProximaNova-SemiBold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'ProximaNova';
+      src: url('./assets/fonts/ProximaNova-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'ProximaNova';
+      src: url('./assets/fonts/ProximaNova-Black.ttf') format('opentype');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Acumin Pro ExtraCondensed — self-hosted via assets/fonts */
+
+    @font-face {
+      font-family: 'Acumin-Pro-ExtraCondensed';
+      src: url('./assets/fonts/Acumin_Pro_ExtraCondensed_Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Acumin-Pro-ExtraCondensed';
+      src: url('./assets/fonts/Acumin_Pro_ExtraCondensed_Reguler.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Acumin-Pro-ExtraCondensed';
+      src: url('./assets/fonts/Acumin_Pro_ExtraCondensed_Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      2) RESET & BASE
+    ─────────────────────────────────────────────────────────────────────────────*/
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'ProximaNova';
+      color: #fff;
+      overflow-x: hidden;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+    a:hover {
+      opacity: .5;
+    }
+    button {
+      color: inherit;
+      transition: color 0.2s ease-in-out;
+    }
+    button:hover {
+      opacity: .5;
+      cursor: pointer;
+    }
+
+    /* headings use bold face */
+    h1, h2 {
+      /* font-family: 'NL-Bold', sans-serif; */
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      3) HEADER
+    ─────────────────────────────────────────────────────────────────────────────*/
+    header {
+      position: absolute; top: 0; left: 0; right: 0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 50px 40px 0;
+      background: transparent; z-index: 10;
+    }
+    .logo img {
+      width: 120px; height: 124px;
+    }
+
+    /* mobile header override */
+    @media (max-width: 767px) {
+      header {
+        position: fixed; margin: 0; padding: 10px 12px; background: #fff;
+      }
+      .logo img { width: 80px; height: 82px; }
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      4) NAVIGATION
+    ─────────────────────────────────────────────────────────────────────────────*/
+    nav {
+      position: fixed; top: 0; left: -100%;
+      width: 100%; height: 100%; background: #000;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      transition: left 0.3s ease-in-out; z-index: 9;
+    }
+    nav.open { left: 0; }
+    .nav-close {
+      position: absolute; top: 20px; right: 20px;
+      background: none; border: none;
+      font-size: 2rem; color: #fff; cursor: pointer;
+    }
+    nav a {
+      font-family: 'ProximaNova';
+      font-weight: 400;
+      font-size: 14px;
+      padding: 14px; 
+      color: #fff;
+      text-transform: uppercase;
+    }
+    header.nav-open .nav-toggle { display: none; }
+
+    /* mobile header override */
+    @media (max-width: 767px) {
+      .nav-toggle {
+        display: block; background: #fff; border: none;
+        padding: 8px; border-radius: 4px;
+        font-size: 24px; 
+        color: #222; 
+        cursor: pointer; 
+        z-index: 11;
+      }
+    }
+
+    /* desktop override */
+    @media (min-width: 768px) {
+      .nav-toggle { display: none; }
+      nav {
+        position: static; transform: none; height: auto;
+        background: transparent; flex-direction: row;
+        justify-content: flex-end; padding: 0; left: 0;
+      }
+      .nav-close { display: none; }
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      5) HERO
+    ─────────────────────────────────────────────────────────────────────────────*/
+    .hero {
+      height: 80vh;
+      background: url('./assets/images/img_home_hero.jpeg')
+                  center/cover no-repeat fixed;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; 
+      padding: 0 1rem;
+    }
+    .hero h1 {
+      margin-top: 60px;
+      margin-bottom: 49.8px;
+      font-size: 60px; 
+      font-family: "Acumin-Pro-ExtraCondensed";
+      font-weight: 300;
+      color: #fff;
+    }
+    .hero p {
+      margin-top: 16px;
+      font-family: 'ProximaNova';
+      font-size: 16px; 
+      font-weight: 700;
+      color: #fff;
+    }
+    .cta-button {
+      border: none;
+      margin-top: 34px;
+      font-family: 'ProximaNova';
+      font-size: 15px;
+      font-weight: 600;
+      background: #000; 
+      color: #fff;
+      padding: 21px 34px;
+      text-transform: uppercase;
+    }
+
+    /* mobile header override */
+    @media (max-width: 767px) {
+      .hero h1 { 
+        font-size: 28px; 
+        margin-bottom: 23.2px;
+      }
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      6) PHILOSOPHY
+    ─────────────────────────────────────────────────────────────────────────────*/
+    .philosophy {
+      display: flex; flex-direction: column;
+      background: #fff; color: #000;
+      padding: 120px 17px; text-align: center;
+    }
+    .philosophy img {
+      width: 55%; height: auto;
+      display: block; margin: 0 auto 6rem;
+    }
+    .philosophy h2 {
+      align-self: center;
+      max-width: 55%;
+      text-align: center;
+      font-size: 60px; 
+      margin-bottom: 34px;
+      font-family: 'Acumin-Pro-ExtraCondensed';
+    }
+    .philosophy p {
+      margin: 16px 0;
+      font-family: 'ProximaNova';
+      font-size: 16px; 
+      font-weight: 400;
+      display: inline-block; 
+      text-align: center; 
+      line-height: 1.8;
+      color: #222;
+    }
+
+    /* mobile header override */
+    @media (max-width: 767px) {
+      .philosophy img {
+        width: 100%;
+      }
+      .philosophy h2 { 
+        max-width: 80%;
+        font-size: 32px;
+      }
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      7) CONTACT & FOOTER
+    ─────────────────────────────────────────────────────────────────────────────*/
+    .contact-footer {
+      display: flex; flex-direction: row;
+      background: #000; color: #fff;
+      padding: 100px 50px;
+      justify-content: center;
+      align-items: center;
+    }
+    .contact-footer p {
+      display: inline; margin: 0 1rem; font-size: 13px;
+      font-family: "Fjalla One";
+      font-weight: 400;
+      text-align: center;
+    }
+
+    /* mobile header override */
+    @media (max-width: 767px) {
+      .contact-footer {
+        flex-direction: column;
+      }
+      .contact-footer p {
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="site-header">
+    <a href="/" class="logo" aria-label="N0RTHERN LIGHTS home">
+      <img src="./assets/images/logo_brand.jpeg" width="80" height="82" alt="Logo" loading="lazy" />
+    </a>
+    <button class="nav-toggle" id="open-nav" aria-label="Open navigation">&#9776;</button>
+    <nav id="mobile-nav" role="navigation" aria-label="Main menu">
+      <button class="nav-close" id="close-nav" aria-label="Close navigation">&times;</button>
+      <a href="#hero">Home</a>
+      <a href="#philosophy">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#team">Team</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <h1>Stop Hiring – Start Partnering</h1>
+      <p>IN A N0RTHERN LIGHTS SUSTAINABLE VALUE CREATION IDEAS INCUBATION MODEL</p>
+      <button class="cta-button">Find Out How Together We Can Be The Next Unicorn!</button>
+    </section>
+
+    <section id="philosophy" class="philosophy">
+      <h2>
+        <strong>PHILOSOPHY OF N0RTHERN LIGHTS</strong>
+      </h2>
+      <img src="./assets/images/img_home_philosophy.jpeg"
+           alt="Founders collaborating" loading="lazy" />
+      <p>
+        <strong>The valuation of N0RTHERN LIGHTS startups depends on 3 factors:</strong>
+      </p>
+      <p>1. The Team Founders' chemistries colliding with each other.</p>
+      <p>2. The speed of the chemistries collision in execution.</p>
+      <p>3. At what altitude the startups are soaring.</p>
+    </section>
+
+    <section id="contact" class="contact-footer">
+      <p style="color: #52c2c8;">N0RTHERN LIGHTS</p>
+      <p>Jl. Pintu Air Raya No. 54 – 54A, Jakarta 10710, Indonesia</p>
+      <p><a href="mailto:seasoned_babyboomers@icloud.com">seasoned_babyboomers@icloud.com</a></p>
+    </section>
+  </main>
+
+  <script>
+    const header = document.getElementById('site-header'),
+          openNav = document.getElementById('open-nav'),
+          closeNav = document.getElementById('close-nav'),
+          nav     = document.getElementById('mobile-nav');
+
+    openNav.addEventListener('click', () => {
+      nav.classList.add('open');
+      header.classList.add('nav-open');
+    });
+    closeNav.addEventListener('click', () => {
+      nav.classList.remove('open');
+      header.classList.remove('nav-open');
+    });
+  </script>
+</body>
+</html>
