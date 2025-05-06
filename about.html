@@ -30,7 +30,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
   <link rel="manifest" href="./assets/site.webmanifest">
 
-  <link rel="preload" as="image" href="./assets/images/img_home_hero.jpeg" />
+  <link rel="preload" as="image" href="./assets/images/img_about_illustration.jpeg" />
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -240,7 +240,7 @@
         justify-content: flex-end; padding: 0; left: 0;
       }
       nav a {
-        color: #999;
+        color: #777;
       }
       .nav-close { display: none; }
     }
@@ -463,7 +463,7 @@
 
 <body>
   <header id="site-header">
-    <a href="/" class="logo" aria-label="N0RTHERN LIGHTS home">
+    <a href="./index.html" class="logo" aria-label="N0RTHERN LIGHTS home">
       <img src="./assets/images/logo_brand.jpeg" width="80" height="82" alt="Logo" loading="lazy" />
     </a>
     <button 
@@ -491,7 +491,15 @@
   <main class="about-section">
     <!-- Full-width top image -->
     <div class="full-width-image">
-      <img src="./assets/images/img_about_illustration.jpeg" alt="About Illustration" />
+      <img 
+        src="./assets/images/img_about_illustration.jpeg" 
+        alt="About Illustration" 
+        width="1920"
+        height="1080"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      />
     </div>
   
     <!-- Centered headings -->
