@@ -25,10 +25,10 @@
   <meta name="twitter:image"       content="https://images.squarespace-cdn.com/content/v1/5ddfb232065f5b7bc74e8ec7/1576065978668-MHIJZ6LHYECK6PX66QCT/image-asset.jpeg" />
 
   <!-- Favicon & Touch Icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="manifest" href="./assets/site.webmanifest">
 
   <link rel="preload" as="image" href="./assets/images/img_home_hero.jpeg" />
 
@@ -175,7 +175,7 @@
     header {
       position: absolute; top: 0; left: 0; right: 0;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 50px 40px 0;
+      padding: 50px 48px 0;
       background: transparent; z-index: 10;
     }
     .logo img {
@@ -185,7 +185,7 @@
     /* mobile header override */
     @media (max-width: 767px) {
       header {
-        position: fixed; margin: 0; padding: 10px 12px; background: #fff;
+        position: fixed; margin: 0; padding: 10px 20px; background: #fff;
       }
       .logo img { width: 80px; height: 82px; }
     }
@@ -244,7 +244,7 @@
     ─────────────────────────────────────────────────────────────────────────────*/
     .hero {
       position: relative;
-      height: 80vh;
+      height: 85vh;
       display: flex; flex-direction: column;
       justify-content: center; align-items: center;
       text-align: center;
@@ -385,8 +385,8 @@
         aria-controls="mobile-nav"
         aria-expanded="true"
       >&times;</button>
-      <a href="#hero">Home</a>
-      <a href="#philosophy">About</a>
+      <a href="/">Home</a>
+      <a href="./about.html">About</a>
       <a href="#contact">Contact</a>
       <a href="#team">Team</a>
     </nav>
@@ -422,13 +422,13 @@
       <p>2. The speed of the chemistries collision in execution.</p>
       <p>3. At what altitude the startups are soaring.</p>
     </section>
-
-    <section id="contact" class="contact-footer">
-      <p style="color: #52c2c8;">N0RTHERN LIGHTS</p>
-      <p>Jl. Pintu Air Raya No. 54 – 54A, Jakarta 10710, Indonesia</p>
-      <p><a href="mailto:seasoned_babyboomers@icloud.com">seasoned_babyboomers@icloud.com</a></p>
-    </section>
   </main>
+
+  <footer id="contact" class="contact-footer">
+    <p style="color: #52c2c8;">N0RTHERN LIGHTS</p>
+    <p>Jl. Pintu Air Raya No. 54 – 54A, Jakarta 10710, Indonesia</p>
+    <p><a href="mailto:seasoned_babyboomers@icloud.com">seasoned_babyboomers@icloud.com</a></p>
+  </footer>
 
   <script>
     const header = document.getElementById('site-header'),

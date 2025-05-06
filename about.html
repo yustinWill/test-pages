@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta & Responsive -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.n0rthernlights.com/about" />
+
+  <!-- Title & Description -->
+  <title>About Us | N0RTHERN LIGHTS</title>
+  <meta name="description" content="Learn about N0RTHERN LIGHTS' mission to partner with startups, combining seasoned experience with youthful innovation to create sustainable value." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="About Us | N0RTHERN LIGHTS" />
+  <meta property="og:description" content="Learn about N0RTHERN LIGHTS' mission to partner with startups, combining seasoned experience with youthful innovation to create sustainable value." />
+  <meta property="og:url"         content="https://www.n0rthernlights.com/about" />
+  <meta property="og:image"       content="https://images.squarespace-cdn.com/content/v1/5ddfb232065f5b7bc74e8ec7/1576065978668-MHIJZ6LHYECK6PX66QCT/image-asset.jpeg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="About Us | N0RTHERN LIGHTS" />
+  <meta name="twitter:description" content="Learn about N0RTHERN LIGHTS' mission to partner with startups, combining seasoned experience with youthful innovation to create sustainable value." />
+  <meta name="twitter:image"       content="https://images.squarespace-cdn.com/content/v1/5ddfb232065f5b7bc74e8ec7/1576065978668-MHIJZ6LHYECK6PX66QCT/image-asset.jpeg" />
+
+  <!-- Favicon & Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="manifest" href="./assets/site.webmanifest">
+
+  <link rel="preload" as="image" href="./assets/images/img_home_hero.jpeg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "N0RTHERN LIGHTS",
+    "url": "https://www.n0rthernlights.com/",
+    "logo": "https://images.squarespace-cdn.com/content/v1/5ddfb232065f5b7bc74e8ec7/1576065978668-MHIJZ6LHYECK6PX66QCT/image-asset.jpeg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "seasoned_babyboomers@icloud.com",
+      "areaServed": "ID"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Pintu Air Raya No. 54–54A",
+      "addressLocality": "Jakarta",
+      "postalCode": "10710",
+      "addressCountry": "ID"
+    }
+  }
+  </script>
+
+  <style>
+    /*────────────────────────────────────────────────────────────────────────────
+      1) LOCAL FONTS
+    ─────────────────────────────────────────────────────────────────────────────*/
+    /* Proxima Nova — self-hosted via assets/fonts */
+
+    @font-face {
+      font-family: 'ProximaNova';
+      src: url('./assets/fonts/ProximaNova-Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'ProximaNova';
+      src: url('./assets/fonts/ProximaNova-Regular.ttf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'ProximaNova';
+      src: url('./assets/fonts/ProximaNova-SemiBold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'ProximaNova';
+      src: url('./assets/fonts/ProximaNova-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'ProximaNova';
+      src: url('./assets/fonts/ProximaNova-Black.ttf') format('opentype');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Acumin Pro ExtraCondensed — self-hosted via assets/fonts */
+
+    @font-face {
+      font-family: 'Acumin-Pro-ExtraCondensed';
+      src: url('./assets/fonts/Acumin_Pro_ExtraCondensed_Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Acumin-Pro-ExtraCondensed';
+      src: url('./assets/fonts/Acumin_Pro_ExtraCondensed_Reguler.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Acumin-Pro-ExtraCondensed';
+      src: url('./assets/fonts/Acumin_Pro_ExtraCondensed_Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Fjalla One — self-hosted via assets/fonts */
+
+    @font-face {
+      font-family: 'FjallaOne';
+      src: url('./assets/fonts/FjallaOne-Regular.ttf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      2) RESET & BASE
+    ─────────────────────────────────────────────────────────────────────────────*/
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'ProximaNova', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+      background-color: #fff;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+    a:hover {
+      opacity: .5;
+    }
+    button {
+      color: inherit;
+      transition: color 0.2s ease-in-out;
+    }
+    button:hover {
+      opacity: .5;
+      cursor: pointer;
+    }
+
+    /* headings use bold face */
+    h1, h2 {
+      font-family: 'Acumin-Pro-ExtraCondensed', sans-serif;
+      font-weight: 700;
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      3) HEADER
+    ─────────────────────────────────────────────────────────────────────────────*/
+    header {
+      position: absolute; top: 0; left: 0; right: 0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 50px 48px 0;
+      background: transparent; z-index: 10;
+    }
+    .logo img {
+      width: 120px; height: 124px;
+    }
+
+    /* mobile header override */
+    @media (max-width: 767px) {
+      header {
+        position: fixed; margin: 0; padding: 10px 20px; background: #fff;
+        border-bottom: #000 solid 1px;
+      }
+      .logo img { width: 80px; height: 82px; }
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      4) NAVIGATION
+    ─────────────────────────────────────────────────────────────────────────────*/
+    nav {
+      position: fixed; top: 0; left: -100%;
+      width: 100%; height: 100%; background: #000;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      transition: left 0.3s ease-in-out; z-index: 9;
+    }
+    nav.open { left: 0; }
+    .nav-close {
+      position: absolute; top: 20px; right: 20px;
+      background: none; border: none;
+      font-size: 2rem; color: #fff; cursor: pointer;
+    }
+    nav a {
+      font-family: 'ProximaNova', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      padding: 14px; 
+      color: #fff;
+      text-transform: uppercase;
+    }
+    header.nav-open .nav-toggle { display: none; }
+
+    /* mobile header override */
+    @media (max-width: 767px) {
+      .nav-toggle {
+        display: block; background: #fff; border: none;
+        padding: 8px; border-radius: 4px;
+        font-size: 24px; 
+        color: #222; 
+        cursor: pointer; 
+        z-index: 11;
+      }
+    }
+
+    /* desktop override */
+    @media (min-width: 768px) {
+      .nav-toggle { display: none; }
+      nav {
+        position: static; transform: none; height: auto;
+        background: transparent; flex-direction: row;
+        justify-content: flex-end; padding: 0; left: 0;
+      }
+      nav a {
+        color: #999;
+      }
+      .nav-close { display: none; }
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      5) ABOUT SECTION
+    ─────────────────────────────────────────────────────────────────────────────*/
+    /* Main about section styling */
+    .about-section {
+      background-color: #ffffff;
+      margin-top: 200px;
+      padding: 120px 48px;
+      color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        margin-top: 120px;
+        padding: 60px 20px;
+      }
+    }
+
+    /* Full-width images */
+    .full-width-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Centered headings */
+    .about-headings {
+      text-align: center;
+      padding: 2rem 0;
+      margin: 6rem 10rem 0 10rem;
+    }
+
+    .about-headings h1 {
+      font-family: 'Acumin-Pro-ExtraCondensed', sans-serif;
+      font-size: 115px;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      letter-spacing: 0;
+    }
+
+    .about-headings h2 {
+      font-family: 'Acumin-Pro-ExtraCondensed', sans-serif;
+      font-size: 62px;
+      font-weight: 300;
+      margin-bottom: 50px;
+    }
+
+    .about-headings h3 {
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+
+    .about-headings strong {
+      font-weight: bold;
+    }
+
+    .about-headings h2.do-not {
+      margin-top: 50px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .about-headings {
+        margin: 4rem 0 0 0;
+        padding-bottom: 0;
+      }
+      .about-headings h1 {
+        font-size: 32px;
+      }
+      .about-headings h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
+      }
+      .about-headings h2.do-not {
+        margin-top: 24px;
+      }
+    }
+
+    /* Two-column responsive layout */
+    .founder-sections {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 80px 10rem 0 10rem;
+      gap: 60px;
+      color: #222;
+    }
+
+    .founder-section {
+      flex: 1 1 50%;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .founder-section a {
+      color: #b3b3b3; 
+      border-bottom-width: 1; 
+      border-bottom-style: solid;
+      border-bottom-color: rgba(179, 179, 179, 0.3);
+    }
+
+    .founder-section.left {
+      flex: 6;
+      text-align: left;
+    }
+
+    .founder-section.right {
+      flex: 4;
+      text-align: right;
+    }
+
+    .founder-section.right .spacer {
+      height: 120px;
+    }
+
+    .founder-section h3 {
+      font-family: 'ProximaNova', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 16px;
+    }
+
+    .founder-section p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px;
+      margin: 1rem 0;
+    }
+
+    .founder-section strong {
+      font-weight: bold;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .founder-sections {
+        margin: 0;
+        gap: 0
+      }
+
+      .founder-section {
+        flex: 1 1 100%;
+      }
+
+      .founder-section.left {
+        text-align: left;
+      }
+
+      .founder-section.right {
+        text-align: right;
+      }
+
+      .founder-section.right .spacer {
+        height: 0;
+      }
+    }
+
+    .image-caption-wrapper {
+      color: #222;
+      font-weight: 300;
+    }
+
+    /* Call-to-action */
+    .call-to-action {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .call-to-action p {
+      color: #222;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 16px 0;
+    }
+
+    .call-to-action a {
+      color: #b3b3b3; 
+      border-bottom-width: 1; 
+      border-bottom-style: solid;
+      border-bottom-color: rgba(179, 179, 179, 0.3);
+    }
+
+    .call-to-action a:hover {
+      text-decoration: underline;
+    }
+
+    /*────────────────────────────────────────────────────────────────────────────
+      6) CONTACT & FOOTER
+    ─────────────────────────────────────────────────────────────────────────────*/
+    .contact-footer {
+      display: flex; flex-direction: row;
+      background: #000; color: #fff;
+      padding: 100px 50px;
+      justify-content: center;
+      align-items: center;
+    }
+    .contact-footer p {
+      display: inline; margin: 0 1rem; font-size: 13px;
+      font-family: "FjallaOne", sans-serif;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    /* mobile header override */
+    @media (max-width: 767px) {
+      .contact-footer {
+        flex-direction: column;
+      }
+      .contact-footer p {
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="site-header">
+    <a href="/" class="logo" aria-label="N0RTHERN LIGHTS home">
+      <img src="./assets/images/logo_brand.jpeg" width="80" height="82" alt="Logo" loading="lazy" />
+    </a>
+    <button 
+      class="nav-toggle" 
+      id="open-nav" 
+      aria-label="Open navigation"
+      aria-controls="mobile-nav"
+      aria-expanded="false"
+    >&#9776;</button>
+    <nav id="mobile-nav" role="navigation" aria-label="Main menu">
+      <button 
+        class="nav-close" 
+        id="close-nav" 
+        aria-label="Close navigation"
+        aria-controls="mobile-nav"
+        aria-expanded="true"
+      >&times;</button>
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#team">Team</a>
+    </nav>
+  </header>
+
+  <main class="about-section">
+    <!-- Full-width top image -->
+    <div class="full-width-image">
+      <img src="./assets/images/img_about_illustration.jpeg" alt="About Illustration" />
+    </div>
+  
+    <!-- Centered headings -->
+    <section class="about-headings">
+      <h1>We are</h1>
+      <h1>“SEASONED“ Baby Boomers+</h1>
+      <h2>we are mostly established, but yearning a common passion of creating solutions for unsolved people’s problems,</h2>
+      <h3><strong>NEEDING PARADOXICAL SOLUTION OF</strong></h3>
+      <h3><strong>NEW DIGITAL TECHNOLOGY</strong> and <strong>TRIED, TESTED & TRUSTED BUSINESS WISDOMS</strong></h3>
+      <h3>MARRYING both <strong>CLICKS & BRICKS</strong> and MERGING <strong>ON-LINE</strong> with <strong>OFF-LINE</strong></h3>
+      <h2 class="do-not">But we can not and <strong>DO NOT</strong> want to do it alone!</h2>
+    </section>
+  
+    <!-- Two-column responsive layout -->
+    <section class="founder-sections">
+      <div class="founder-section left">
+        <h3>HOW DO WE BECOME STRATEGIC FOUNDER:</h3>
+        <p>Well, we have time! We have passion, we have the itch why certain today’s consumers and businesses problems (hi, there are lots of them!) don’t get a modern technology and digital solution! Yes, there are GoFoods, GrabCars, TokoPedias, DANA, GoPay and the likes and they are solving real problems, but it is just scratching the surface! So many other things are so cumbersome and impractical. Why don’t somebody think of an elegant and practical solutions? Then we reckon, WHY NOT US? WHY WAIT FOR SOMEBODY ELSE?</p>
+        <p>For SEASONED BABY BOOMERS, waiting for a solution IS AN OPPORTUNITY!</p>
+        <p>We are successful, we have lots of experiences and skills, we have business networks and access to industries and expertise. We also have some access to Capital.</p>
+        <p>When we meet millennials, we are amazed by their energy and creativity, their new way of thinking, their emphasis to experiencing life like living in good places or enjoying transport rather than bogged down with matters like mortgages or cars. It’s so refreshing and we baby boomers enjoy experiencing good lifestyle too! But we also are sometimes stumped by the millennials lack of knowledge of some mundane practical things which we know so well! This is also an OPPORTUNITY!</p>
+        <p>We should Partner with the millennials! We can complement each other so perfectly! Their digital savvy, energy, speed and courage to make decisions complement well with our abundance of experiences, practical and measured tech savviness, access to resources as well as baby boomers’ famous enthusiasm to create something new.</p>
+        <p>So with Baby Boomers analytical experiences, we begin formulating a sustainable modular model and structures for incubating a startup by breaking down elements crucial for Business StartUp, focusing on the collaborative process of VALUE CREATION and shielding the noises from finance administration and reporting, cashflows and tax by providing a Proxy Shell Company for Business Transactions within the 18 months incubation prior to eventual entity structuring. We also provide leadership and mentoring, financial control and curating the quality of business process and model in active collaboration with BUSINESS OPERATORS FOUNDER and TECHNOLOGY FOUNDER.</p>
+        <p>As <a href="/team">STRATEGIC FOUNDER</a> we carefully curated a database of VALUE CREATION IDEAS, based upon N0RTHERN LIGHTS Principles, along with Business and Financial Models, Business Vision, Business Process, Value Proposition.</p>
+        <p>We also will be providing some SEED CAPITAL as well as arranging additional SEED CAPITAL from Crowdfunding Sources for the 18 months incubation period prior to entity structuring and FIRST ROUND INVESTOR(s) entry. For this SEED CAPITAL part contributed by the STRATEGIC FOUNDER, the STRATEGIC FOUNDER is also part of the SEED CAPITAL PASSIVE FOUNDER and therefore has the exact same eligibility and responsibilities (and also the same risks) as the other SEED CAPITAL PASSIVE FOUNDER which are not a STRATEGIC FOUNDER.</p>
+        <p>All N0RTHERN LIGHTS Value Creation Project incubation period are set to be a maximum of 18 months period, upon which, if no FIRST ROUND INVESTOR(s) agrees to invest in the Value Creation Project at a reasonable valuation and terms and conditions, then the Value Creation Project will be deemed as failed and all activities and investments from all the FOUNDERS will stop and ceased completely.</p>
+      </div>
+  
+      <div class="founder-section right">
+        <h3>BUSINESS OPERATORS FOUNDER:</h3>
+        <p>Will contribute their expertise and time to design the Business Processes, manage day-to-day end-to-end Operations of the StartUp, handle Staffworks, Administration, Legal Contract Documents signing and filing. Main Responsibilities will be setting up Business Plan, Target and Achievements, Marketing & Communication of the StartUp and Customer/Business Partners facing.</p>
+
+        <div class="spacer"></div>
+
+        <h3>TECHNOLOGY FOUNDER:</h3>
+        <p>Will contribute their technical expertise to design, architect, develop/code and implement the user interfaces, technical ecosystems for the Mobile Apps, Front End and Back End Systems along with all the required interfaces to third party systems as well as interfaces to devices used in this value creation and its day to day technical systems operations and its security aspects, and therefore will be called TECHNOLOGY FOUNDER.</p>
+
+        <div class="spacer"></div>
+  
+        <h3>SEED CAPITAL PASSIVE FOUNDER:</h3>
+        <p>Will contribute some small token seed capital for a maximum 18 months incubation period prior to entity structuring and FIRST ROUND INVESTOR(s) entry. The concept would be like those of crowdfunding projects, only this seed capital is in a small token units of equity rights based upon equal shares proportion as the seed capital from the STRATEGIC FOUNDER on apple to apple basis. The SEED CAPITAL PASSIVE FOUNDER is for those who believe in the viability of the VALUE CREATION PROJECT and wanted to be part of original Founders of the StartUp and benefit from the high valuation increase of the StartUp but without having to contribute in skills and time or  any involvement in day to day incubation period. All the collective SEED CAPITAL PASSIVE FOUNDER will be eligible through  all the seed capital combined (including the one coming from STRATEGIC FOUNDER) for an equal equity rights shares as the STRATEGIC FOUNDER, BUSINESS OPERATORS FOUNDER and TECHNOLOGY FOUNDER once the entity is successfully structured. Upon successful entity structuring of a maximum of 18 months incubation period, the SEED CAPITAL PASSIVE FOUNDER, have an option to either exit their seed capital investment at a high return determined by the STRATEGIC FOUNDER at the beginning of the Value Creation Project (recognizing the high risk nature of a StartUp incubation period) or stay as a passive shareholders.</p>
+      </div>
+    </section>
+  
+    <!-- Full-width bottom image -->
+    <div class="full-width-image">
+      <img src="./assets/images/img_about_building_block.jpeg" alt="Building Block" />
+    </div>
+    <figcaption class="image-caption-wrapper">
+      <div class="image-caption"><p>The Building Blocks for a N0RTHERN LIGHTS StartUp Company</p></div>
+    </figcaption>
+  
+    <!-- Centered call-to-action -->
+    <section class="call-to-action">
+      <p>SEND US YOUR CV TO: <strong><a href="mailto:seasoned_babyboomers@icloud.com">seasoned_babyboomers@icloud.com</a></strong></p>
+      <br />
+      <p>STATING WHICH TYPE OF FOUNDER YOU ARE INTERESTED TO BE, TELL US YOUR ULTIMATE DREAM AND PASSION</p>
+      <p>AND EARN A SLOT TO CHAT WITH US TO FIND OUT HOW TOGETHER WE CAN BE THE NEXT UNICORN!</p>
+      <br />
+      <p>or CONTACT US <a href="/contact">here</a>!</p>
+    </section>
+  </main>  
+
+  <footer id="contact" class="contact-footer">
+    <p style="color: #52c2c8;">N0RTHERN LIGHTS</p>
+    <p>Jl. Pintu Air Raya No. 54 – 54A, Jakarta 10710, Indonesia</p>
+    <p><a href="mailto:seasoned_babyboomers@icloud.com">seasoned_babyboomers@icloud.com</a></p>
+  </footer>
+
+  <script>
+    const header = document.getElementById('site-header'),
+          openNav = document.getElementById('open-nav'),
+          closeNav = document.getElementById('close-nav'),
+          nav     = document.getElementById('mobile-nav');
+
+    openNav.addEventListener('click', () => {
+      nav.classList.add('open');
+      header.classList.add('nav-open');
+    });
+    closeNav.addEventListener('click', () => {
+      nav.classList.remove('open');
+      header.classList.remove('nav-open');
+    });
+  </script>
+</body>
+</html>
