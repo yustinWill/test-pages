@@ -452,18 +452,21 @@
     });
   </script>
   <script>
-    // Check if URL ends with ".html"
-    if (window.location.pathname.endsWith('index.html')) {
-      // Redirect to the same page without ".html"
-      window.location.href = window.location.pathname.replace('index.html', '');
-    }
-    else if (window.location.pathname.endsWith('index')) {
-      // Redirect to the same page without ".html"
-      window.location.href = window.location.pathname.replace('index', '');
-    }
-    else if (window.location.pathname.endsWith('.html')) {
-      // Redirect to the same page without ".html"
-      window.location.href = window.location.pathname.replace('.html', '');
+    // Local Development
+    if (window.location.pathname.includes('http')) {
+      // Check if URL ends with ".html"
+      if (window.location.pathname.endsWith('index.html')) {
+        // Redirect to the same page without ".html"
+        window.location.href = window.location.pathname.replace('index.html', '');
+      }
+      else if (window.location.pathname.endsWith('index')) {
+        // Redirect to the same page without ".html"
+        window.location.href = window.location.pathname.replace('index', '');
+      }
+      else if (window.location.pathname.endsWith('.html')) {
+        // Redirect to the same page without ".html"
+        window.location.href = window.location.pathname.replace('.html', '');
+      }
     }
   </script>
 </body>
