@@ -293,6 +293,14 @@
       padding: 16px;
       box-sizing: border-box;
     }
+    @media (max-width: 1200px) {
+      .founder-row {
+        margin: 32px 2rem;
+      }
+      .founder-single {
+        margin: 0 2rem;
+      }
+    }
     @media (max-width: 768px) {
       .founder {
         flex: 1 1 100%;
@@ -324,7 +332,8 @@
     .founder-profile img {
       width: 100%;
       max-width: 420px;
-      height: 420px;
+      max-height: 420px;
+      aspect-ratio: 1;
       display: block;
       margin: 0 auto 16px;
       border-radius: 4px;
